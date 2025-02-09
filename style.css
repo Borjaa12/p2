@@ -1,0 +1,167 @@
+body {
+    overflow-x:hidden;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width:100%;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: url('header-image.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 0; 
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px; 
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+    transition: color 0.3s ease-in-out;
+}
+
+ul, ol {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+}
+
+
+main {
+    padding: 20px;
+    max-width: 100%;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h1, h2 {
+    color: rgb(0, 7, 108);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background: #007bff;
+    color: white;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+fieldset {
+    border: 1px solid #007bff;
+    padding: 15px;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+legend {
+    font-weight: bold;
+    color: #007bff;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 0;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    .image img {
+        max-width: 300px;
+        margin: auto;
+    }
+}
